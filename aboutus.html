@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>Despre Noi</h1>
+  <p>Bine ai venit pe pagina noastra. Noi suntem Echipa DressEd Shop si suntem aici pentru tine. Fie ca ai un eveniment important care se apropie, fie ca doresti sa faci un cadou frumos unei persoane speciale sau doar cauti haine pentru tine, echipa noastra este aici sa te ajute. Iti oferim un catalog mare de produse, pentru toate gusturile.</p>
+  <p>Comanda online , nimic mai simplu sau mai rapid. Tu plasezi comanda ,iar noi ne asiguram ca in decurs de MAXIM 1 saptamana aceasta va ajunge la tine acasa. Poti alege plata cu cardul sau plata la livrare, dupa cum iti este mai la indemana. </p> 
+  <p>Deasemenea, te asteptam in magazinele noastre cu oferte si reduceri! </p> 
+</div>
+
+<h2 style="text-align:center">Am deschis magazine si in urmatoarele locatii</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="imgs\magazin1.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Te asteptam!</h2>
+        <p class="title">Orar : 10:00 - 21:00</p>
+        <p>Calea Aurel Vlaicu 10, Arad 310141</p>
+        
+        <p><button title="button title" class="action primary tocart" onclick=" window.open('https://www.google.com/maps/place/NEW+YORKER/@45.7238696,20.0792416,8z/data=!4m9!1m2!2m1!1smagazin+new+yorker!3m5!1s0x4745987518ab4adb:0xc42a9c58da9e6ffe!8m2!3d46.1898458!4d21.3210955!15sChJtYWdhemluIG5ldyB5b3JrZXIiA4gBAVoUIhJtYWdhemluIG5ldyB5b3JrZXKSAQ5jbG90aGluZ19zdG9yZQ', '_blank'); return false;">Vezi locatia</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="imgs\magazin2.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Te asteptam!</h2>
+        <p class="title">Orar : 10:00 - 21:00</p>
+        <p>Calea Sagului 100, Timisoara 300516</p>
+        
+        <p><button title="button title" class="action primary tocart" onclick=" window.open('https://www.google.com/maps/place/NEW+YORKER/@45.7238696,20.0792416,8z/data=!3m1!5s0x47455d01241e3645:0x8539bf0e14e38aec!4m9!1m2!2m1!1smagazin+new+yorker!3m5!1s0x47455d0102fa83b1:0xb25dc0084832ced1!8m2!3d45.7238696!4d21.1998471!15sChJtYWdhemluIG5ldyB5b3JrZXIiA4gBAVoUIhJtYWdhemluIG5ldyB5b3JrZXKSAQ5jbG90aGluZ19zdG9yZQ', '_blank'); return false;">Vezi locatia</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="imgs\magazin3.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Te asteptam!</h2>
+        <p class="title">Orar : 10:00 - 21:00</p>
+        <p>Iulius Mall, Strada Aristide Demetriade 1, Timisoara 300088</p>
+        
+        <p><button title="button title" class="action primary tocart" onclick=" window.open('https://www.google.com/maps/place/New+Yorker/@45.7238696,20.0792416,8z/data=!4m9!1m2!2m1!1smagazin+new+yorker!3m5!1s0x47456776a2ce1685:0xf11fe24e5d33a1d!8m2!3d45.7665296!4d21.2296614!15sChJtYWdhemluIG5ldyB5b3JrZXIiA4gBAVoUIhJtYWdhemluIG5ldyB5b3JrZXKSAQ5jbG90aGluZ19zdG9yZQ', '_blank'); return false;">Vezi locatia</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
